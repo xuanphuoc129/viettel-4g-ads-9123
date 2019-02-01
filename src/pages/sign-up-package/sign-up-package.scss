@@ -1,0 +1,82 @@
+page-sign-up-package {
+  ion-content.content {
+    background: rgba($color: #000000, $alpha: .4);
+  }
+  .iframe-container{
+    max-width: 600px;
+    border-radius: 10px;
+    .package-name{
+      font-weight: bold;
+      font-size: 1.7rem;
+      padding: 10px 10px 0 10px;
+    }
+    .title-des{
+      font-weight: bold;
+      font-size: 1.7rem;
+      padding: 10px;
+      border-bottom: .55px solid lightgray;
+    }
+    .des{
+      padding: 10px;
+      font-size: 1.5rem;
+      white-space: pre-line;
+    }
+  }
+  
+
+  .scroll-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .backdrop {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .header-popup {
+   
+    color: white;
+    // font-size: 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    img{
+      border-radius: 10px 10px 0 0;
+    }
+    .left-right {
+        right: -10px;
+        top: -5px;
+    }
+
+
+  }
+
+  .footer-popup {
+    border-radius: 0px 0px 10px 10px;
+    font-size: 1.5rem;
+    .border{
+      border: .55px solid lightgray;
+      padding: 6px;
+      border-radius: 5px;
+    }
+    .name-p{
+      color: red;
+      font-weight: bold;
+      font-size: 1.5rem;
+      &.margin-left{
+        margin-left: 10px;
+      }
+    }
+    .name-phone{
+      color: map-get($map: $colors, $key: blue);
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+  }
+}

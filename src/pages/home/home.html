@@ -1,0 +1,52 @@
+<ion-content>
+  <div class="img-header">
+    <img src="./assets/imgs/viettel-4g-desktop.jpg" alt="Viettel 4G">
+  </div>
+
+  <div *ngFor="let item of mPackages; let i = index" class="x-row-container background-{{i}}">
+    <div class="a1-relative">
+        <div class="package-name" [ngClass]="mColors[i]">{{item.name}}</div>
+        <div class="vt-4g-package-title">
+          <span>{{item.title}}</span>
+        </div>
+
+        <div class="sm-hidden md-hidden lg-hidden xl-hidden" text-center margin-bottom>
+          <button ion-button outline class="btn-info " [ngClass]="mColors2[i]" (click)="onClickInfo(item)">Thông tin</button>
+        </div>
+
+        <div class="btn-right a1-absolute xs-hidden">
+            <button ion-button outline class="btn-info " [ngClass]="mColors2[i]" (click)="onClickInfo(item)">Thông tin</button>
+        </div>
+    </div>
+
+    <ion-row justify-content-center>
+      <ion-col col-12 col-sm-3 col-lg-3 *ngFor="let p of item.items">
+        <div class="m-package-container">
+          <viettel-package [mViettelPackage]="p" [color]="mColors[i]"></viettel-package>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <question-and-answer></question-and-answer>
+
+  <viettel-footer></viettel-footer>
+
+  <ion-fab bottom right class="scroll-top-btn" [hidden]="mScrollTop < 20">
+    <button ion-fab color="light" (click)="scrollTop()">
+      <ion-icon name="md-arrow-up"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-fab top left>
+    <fake-customer></fake-customer>
+  </ion-fab>
+
+  <ion-fab bottom right class="btn-menu">
+    <button ion-fab (click)="onClickAddFab()">
+      <ion-icon name="add" class="animated pulse"></ion-icon>
+    </button>
+  </ion-fab>
+
+
+</ion-content>

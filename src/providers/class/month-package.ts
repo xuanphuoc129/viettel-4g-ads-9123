@@ -105,7 +105,7 @@ export class PackageController {
             price: "90,000",
             description: "Gói cước data trọn gói. Sử dụng trên cả mạng 3G/4G.\\n\\nVới 90.000đ Quý khách sẽ có 5GB lưu lượng tốc độ cao, sử dụng trong 30 ngày (đối với TB trả trước) hoặc theo chu kỳ tháng (đối với TB trả sau)",
             data: "5GB",
-            isHot: "TRUE",
+            isHot: true,
             time: "30 ngày",
             url: "sms:9123?&body=MIMAX90 0987762233"
         },
@@ -116,7 +116,7 @@ export class PackageController {
             price: "300,000",
             description: "Với 300.000 đồng, Quý khách được truy cập Internet không giới hạn lưu lượng tốc độ cao. Hết 30GB đầu, tốc độ cao giới hạn về 1Mbps. Chu kỳ gói cước 30 ngày, sau 30 ngày hệ thống tự động gia hạn",
             data: "30GB",
-            isHot: "TRUE",
+            isHot: true,
             time: "30 ngày",
             url: "sms:9123?&body=UMAX300 0987762233"
         },
@@ -127,7 +127,7 @@ export class PackageController {
             price: "70,000",
             description: "Gói cước data trọn gói. Sử dụng trên cả mạng 3G/4G.\\n\\nVới 70.000đ Quý khách sẽ có 3GB lưu lượng tốc độ cao, sử dụng trong 30 ngày (đối với TB trả trước) hoặc theo chu kỳ tháng (đối với TB trả sau).",
             data: "3GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=MIMAX70 0987762233"
         },
@@ -138,7 +138,7 @@ export class PackageController {
             price: "125,000",
             description: "Gói cước data trọn gói. Sử dụng trên cả mạng 3G/4G.\\n\\nVới 125.000đ Quý khách sẽ có 8GB lưu lượng tốc độ cao, sử dụng trong 30 ngày (đối với TB trả trước) hoặc theo chu kỳ tháng (đối với TB trả sau).",
             data: "8GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=MIMAX125 0987762233"
         },
@@ -149,7 +149,7 @@ export class PackageController {
             price: "200,000",
             description: "Gói cước data trọn gói. Sử dụng trên cả mạng 3G/4G.\\n\\nVới 200.000đ Quý khách sẽ có 15GB lưu lượng tốc độ cao, sử dụng trong 30 ngày (đối với TB trả trước) hoặc theo chu kỳ tháng (đối với TB trả sau).",
             data: "15GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=MIMAX200 0987762233"
         },
@@ -160,7 +160,7 @@ export class PackageController {
             price: "500,000",
             description: "Với 500.000đ Quý khách có 48GB tốc độ cao trong vòng 12 tháng tính từ tháng đăng ký, hết tốc độ cao miễn phí sử dụng tốc độ thường",
             data: "48GB",
-            isHot: "TRUE",
+            isHot: true,
             time: "12 tháng",
             url: "sms:9123?&body=D500 0987762233"
         },
@@ -171,7 +171,7 @@ export class PackageController {
             price: "900,000",
             description: "Là gói cước trọn gói dành cho thuê bao Dcom trả trước. Với 900.000đ Quý khách có 84GB trong vòng 12 tháng tính từ tháng đăng ký, hết tốc độ cao miễn phí sử dụng tốc độ thường.",
             data: "84GB",
-            isHot: "TRUE",
+            isHot: true,
             time: "12 tháng",
             url: "sms:9123?&body=D900 0987762233"
         },
@@ -182,7 +182,7 @@ export class PackageController {
             price: "90,000",
             description: "Là gói cước trọn gói dành cho thuê bao Dcom trả trước. Với 90.000đ Quý khách có 10GB sử dụng trong 30 ngày. Hết dung lượng miễn phí sẽ truy cập với tốc độ bình thường",
             data: "10GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=D90 0987762233"
         },
@@ -193,7 +193,7 @@ export class PackageController {
             price: "70,000",
             description: "Là gói cước trọn gói dành cho thuê bao Dcom trả trước. Với 70.000đ Quý khách có 7GB sử dụng trong 30 ngày. Hết dung lượng miễn phí sẽ truy cập với tốc độ bình thường",
             data: "7GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=D70 0987762233"
         },
@@ -204,7 +204,7 @@ export class PackageController {
             price: "120,000",
             description: "Là gói cước trọn gói dành cho thuê bao Dcom trả trước. Với 120.000đ Quý khách có 12GB sử dụng trong 30 ngày. Hết dung lượng miễn phí sẽ truy cập với tốc độ bình thường",
             data: "12GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=D120 0987762233"
         },
@@ -215,7 +215,7 @@ export class PackageController {
             price: "200,000",
             description: "Là gói cước trọn gói dành cho thuê bao Dcom trả trước. Với 200.000đ Quý khách có 20GB sử dụng trong 30 ngày. Hết dung lượng miễn phí sẽ truy cập với tốc độ bình thường",
             data: "20GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=D200 0987762233"
         },
@@ -226,7 +226,7 @@ export class PackageController {
             price: "50,000",
             description: "Gói cước data trọn gói. Sử dụng trên cả mạng 3G/4G.\\n\\nVới 50.000đ Quý khách sẽ có 3GB lưu lượng tốc độ cao, sử dụng trong 30 ngày (đối với TB trả trước) hoặc theo chu kỳ tháng (đối với TB trả sau).",
             data: "3GB",
-            isHot: "TRUE",
+            isHot: true,
             time: "30 ngày",
             url: "sms:9123?&body=ECOD50 0987762233"
         },
@@ -237,7 +237,7 @@ export class PackageController {
             price: "10,000",
             description: "TOMD10: 10.000đ/lần có 200MB, không giới hạn thời gian sử dụng, hết 200MB ngừng truy cập. Gói TOMD10 sẽ bị hủy nếu khách hàng không sử dụng Data trong vòng 60 ngày.",
             data: "200MB",
-            isHot: "FALSE",
+            isHot: false,
             time: "60 ngày",
             url: "sms:9123?&body=TOMD10 0987762233"
         },
@@ -248,7 +248,7 @@ export class PackageController {
             price: "30,000",
             description: "TOMD30: 30.000đ/lần có 1GB, không giới hạn thời gian sử dụng, hết 1GB ngừng truy cập. Gói TOMD30 sẽ bị hủy nếu khách hàng không sử dụng Data trong vòng 60 ngày.",
             data: "1GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "60 ngày",
             url: "sms:9123?&body=TOMD20 0987762233"
         },
@@ -259,7 +259,7 @@ export class PackageController {
             price: "90,000",
             description: "Miễn phí cuộc gọi nội mạng dưới 20p/cuộc, miễn phí 50p gọi ngoại mạng/tháng và miễn phí 2GB tốc độ cao/ngày",
             data: "60GB",
-            isHot: "TRUE",
+            isHot: true,
             time: "30 ngày",
             url: "sms:9123?&body=V90 0987762233"
         },
@@ -270,7 +270,7 @@ export class PackageController {
             price: "90,000",
             description: "Miễn phí cuộc gọi nội mạng dưới 10p/cuộc, 15 phút gọi ngoại mạng, 250 tin nhắn nội mạng, 5GB data, hết lưu lượng dừng truy cập",
             data: "5GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=F90 0987762233"
         },
@@ -281,7 +281,7 @@ export class PackageController {
             price: "90,000",
             description: "9GB data, hết lưu lượng dừng truy cập",
             data: "9GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=XL90 0987762233"
         },
@@ -292,7 +292,7 @@ export class PackageController {
             price: "50,000",
             description: "100 phút gọi ngoại mạng, 100 phút gọi nội mạng, 30 tin nhắn nội mạng, 3GB data, hết lưu lượng dừng truy cập.",
             data: "3GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=XL50 0987762233"
         },
@@ -303,7 +303,7 @@ export class PackageController {
             price: "90,000",
             description: "3GB tốc độ cao sau đó về tốc độ thường",
             data: "3GB",
-            isHot: "FALSE",
+            isHot: false,
             time: "30 ngày",
             url: "sms:9123?&body=HI90 0987762233"
         }

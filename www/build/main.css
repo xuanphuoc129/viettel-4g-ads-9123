@@ -34102,13 +34102,6 @@ page-home .x-row-container {
   padding: 20px 0;
 }
 
-page-home .x-row-container.background-2 {
-  background-image: url("../assets/imgs/viettel-4g-bg-3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 page-home .package-name {
   font-size: 2.6rem;
   font-weight: bold;
